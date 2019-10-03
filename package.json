@@ -1,0 +1,40 @@
+{
+    "name": "e2syntax",
+    "displayName": "E2 Syntax Support",
+    "description": "Syntax highlight for Expression 2.",
+    "icon": "img/logo.png",
+    "version": "1.0.0",
+    "publisher": "dj-haski",
+    "license": "GNU General Public License v3.0",
+    "bugs": {
+        "url": "https://github.com/DjHaski/VSCode-E2/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DjHaski/VSCode-E2.git"
+    },
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "e2",
+            "aliases": ["Expression 2", "E2", "EX2", "e2", "ex2"],
+            "extensions": [".e2", ".expression2"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "e2",
+            "scopeName": "source.e2",
+            "path": "./syntaxes/e2.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "e2",
+            "path": "./snippets/snippets.json"
+        }]
+    }
+}

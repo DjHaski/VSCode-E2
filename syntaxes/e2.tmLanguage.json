@@ -1,0 +1,109 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "E2",
+	"patterns": [
+		{
+			"include": "#function"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#inline-functions"
+		},
+		{
+			"include": "#option"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#number"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.e2",
+				"match": "if|else|elseif|while|for|foreach|function|local|return|continue|break"
+			}]
+		},
+		"inline-functions": {
+			"patterns": [{
+			"name": "support.function.e2",
+			"match": "\\b(finite|isinf|isnan|inf|mod|sqrt|cbrt|root|frexp|exp|ln|log2|log10|log|abs|ceil|floor|round|int|frac|clamp|inrange|sign|min|max|random|randint|pi|toRad|toDeg|sin|cos|tan|cot|sec|csc|asin|acos|atan|sinh|cosh|tanh|coth|sech|csch|sinr|cosr|tanr|cotr|secr|cscr|sinhr|coshr|tanhr|cothr|sechr|cschr|asinr|acosr|atanr|airDensity|speedLimit|angSpeedLimit|bearing|elevation|heading|changed|wrap|index|length|unicodeLength|upper|lower|sub|left|right|find|findRE|explode|explodeRE|repeat|trim|trimLeft|trimRight|replace|replaceRE|reverse|toNumber|toString|toChar|toUnicodeChar|toByte|toUnicodeByte|format|match|matchFirst|gmatch|entity|owner|id|noentity|world|sunDirection|type|model|keyvalues|name|steamID|steamID64|isSteamFriend|steamFriends|pos|eye|eyeAngles|eyeTrace|eyeTraceCursor|shootPos|aimEntity|aimBone|aimPos|aimNormal|frags|deaths|team|teamName|teamColor|teamDeaths|teamFrags|teamPlayers|teamScore|teams|forward|up|vel|velL|boxCenter|boxMax|boxMin|boxSize|toWorld|toLocal|toWorldAxis|toLocalAxis|angVel|angVelVector|angles|radius|height|health|maxHealth|armor|volume|surfaceArea|stress|mass|timeConnected|creationTime|massCenter|massCenterL|setMass|inertia|applyForce|applyOffsetForce|applyAngForce|applyTorque|isPlayer|isOnFire|isWeapon|isNPC|isFrozen|isVehicle|inVehicle|isWorld|isOnGround|isUnderWater|isPlayerHolding|isAdmin|isSuperAdmin|isAlive|isCrouch|isFlashlightOn|isTyping|isValid|isValidPhysics|inNoclip|friends|trusts|keyAttack1|keyAttack2|keyDuck|keyForward|keyJump|keyLeft|keyLeftTurn|keyReload|keyRight|keyRightTurn|keySprint|keyWalk|keyZoom|keyUse|keyPressed|keyBack|driver|passenger|vehicle|ejectPod|lockPod|killPod|podStripWeapons|weapon|weapons|clip1|clip2|primaryAmmoType|secondaryAmmoType|ammoCount|tool|nearestPoint|boxCenterW|aabbMin|aabbMax|aabbSize|aabbWorldMin|aabbWorldMax|aabbWorldSize|keyClk|keyClkPressed|setTrails|removeTrails|runOnKeys|playerDisconnectClk|lastDisconnectedPlayer|runOnPlayerDisconnect|playerConnectClk|lastConnectedPlayer|runOnPlayerConnect|inGodMode|lookupAttachment|attachmentPos|attachmentAng|attachments|vec2|shift|toAngle|dehomogenized|vec|randvec|randvec2|randvec4|shiftL|shiftR|rotate|isInWorld|vec4|minVec|maxVec|mix|positive|length2|distance|distance2|normalized|dot|cross|setX|setY|setZ|setW|toWorldAng|toWorldPosAng|toLocalAng|toLocalPosAng|outerProduct|pointContents|pointContentsArray|pointHasContent|bezier|identity2|matrix2|swapRows|swapColumns|setRow|setColumn|identity|matrix|setDiagonal|mRotation|identity4|matrix4|inverseA|row|column|element|setElement|swapElements|diagonal|trace|det|transpose|adj|rowMatrix|rowMatrix2|rowMatrix4|ang|angnorm|pitch|yaw|roll|setPitch|setYaw|setRoll|rotateAroundAxis|bone|bones|boneCount|nobone|nowirelink|wirelink|isHiSpeed|hasInput|hasOutput|xyz|writeString|writeUnicodeString|readArray|writeCell|readCell|readString|writeArray|writeTable|inputs|outputs|inputType|outputType|setXyz|comp|i|arg|conj|real|imag|csqrt|atan2|quat|qi|qj|qk|inv|qMod|nlerp|slerp|qRotation|rotationAngle|rotationAxis|rotationVector|first|duped|dupefinished|inputClk|last|removing|ops|opcounter|minquota|maxquota|softQuota|hardQuota|timeQuota|perf|getName|setName|cpuUsage|error|assert|reset|exit|getCode|getCodeIncludes|remoteSetCode|remoteUpload|hash|hashNoComments|concmd|ioInputEntity|ioOutputEntities|runOnLast|selfDestruct|selfDestructAll|playerCanPrint|printDriver|hintDriver|hint|print|printColor|printColorC|printColorDriver|printTable|tickClk|tickInterval|curtime|realtime|systime|clk|clkName|getTimers|interval|runOnTick|timer|stoptimer|stopAllTimers|toUnit|fromUnit|convertUnit|steamIDFrom64|steamIDTo64|map|hostname|hostip|isLan|gamemode|gravity|ping|isSinglePlayer|isDedicated|players|playersAdmins|playersSuperAdmins|numPlayers|maxPlayers|maxOfType|playerDamage|convar|convarnum|time|date|dateUTC|maxFrictionMass|minFrictionMass|getConstraints|getConnectedEntities|hasConstraints|isConstrained|isWeldedTo|isConstrainedTo|parent|parentBone|children|chatClk|lastSpoke|lastSaid|lastSaidWhen|lastSaidTeam|hideChat|runOnChat|setBodygroup|getBodygroups|setColor|getColor|getColor4|setAlpha|getAlpha|setMaterial|getMaterial|setSkin|getSkin|getSkinCount|setRenderMode|getPlayerColor|getWeaponColor|hsl2rgb|hsv2rgb|rgb2hsv|rgb2digi|rgb2hsl|findUpdateRate|findPlayerUpdateRate|findCanQuery|findInSphere|findInCone|findInBox|findByName|findByModel|findByClass|findPlayerByName|findPlayerBySteamID|findPlayerBySteamID64|findResult|findClosest|findToArray|findCount|findMax|findSortByDistance|findClipToClass|findClipFromClass|findClipToEntities|findClipFromEntities|findClipToEntity|findClipFromEntity|findClipToModel|findClipFromModel|findClipToName|findClipFromName|findClipToSphere|findClipFromSphere|findClipToRegion|findClipFromBox|findClipToBox|findAllowClass|findAllowEntities|findAllowEntity|findAllowModel|findAllowPlayer|findAllowPlayerProps|findClearBlackClassList|findClearBlackEntityList|findClearBlackList|findClearBlackModelList|findClearBlackPlayerPropList|findClearWhiteClassList|findClearWhiteEntityList|findClearWhiteList|findClearWhiteModelList|findClearWhitePlayerPropList|findDisallowClass|findDisallowEntities|findDisallowEntity|findDisallowModel|findDisallowPlayer|findDisallowPlayerProps|findExcludeClass|findExcludeEntities|findExcludeEntity|findExcludeModel|findExcludePlayer|findExcludePlayerProps|findIncludeClass|findIncludeEntities|findIncludeEntity|findIncludeModel|findIncludePlayer|findIncludePlayerProps|rangerFlags|rangerFilter|ranger|rangerAngle|rangerOffset|rangerHull|rangerAngleHull|rangerOffsetHull|position|fraction|hit|hitNormal|hitGroup|hitSky|hitTexture|hitWorld|distanceLeftSolid|positionLeftSolid|fractionLeftSolid|startSolid|matType|noranger|rangerDefaultZero|rangerHitEntities|rangerHitWater|rangerIgnoreWorld|rangerPersist|rangerReset|toTable|npcGetTarget|npcRelationship|npcRelationshipByOwner|npcDisp|npcAttack|npcFace|npcGiveWeapon|npcGoRun|npcGoWalk|npcStop|npcSetTarget|npcShoot|signalGetGroup|signalSetGroup|signalSetOnRemove|signalClk|signalName|signalGroup|signalSend|signalSendDirect|signalSendToPlayer|signalSender|signalSenderId|signalClearOnRemove|holoAlpha|holoAng|holoBodygroup|holoBodygroups|holoCanCreate|holoColor|holoPlayerColor|holoCreate|holoDelete|holoDeleteAll|holoDisableShading|holoEntity|holoIndex|holoMaterial|holoModel|holoModelAny|holoModelList|holoParent|holoParentAttachment|holoUnparent|holoPos|holoRemainingSpawns|holoReset|holoScale|holoBoneScale|holoScaleUnits|holoShadow|holoVisible|holoClip|holoClipEnabled|holoClipsAvailable|holoRenderFX|holoSkin|fileLoaded|fileRead|fileReadList|fileClk|fileLoadedList|fileLoadingList|fileList|fileListTable|fileListClk|fileAppend|fileWrite|fileCanList|fileCanLoad|fileCanWrite|fileLoad|fileLoading|fileMaxSize|fileName|fileStatus|runOnFile|runOnList|dsSend|dsSendDirect|dsGetSender|dsJoinGroup|dsLeaveGroup|dsClearGroups|dsClk|dsClkName|dsGetType|dsGetGroups|dsGetGroup|dsProbe|dsSetScope|dsGetScope|dsGetHash|runOnSignal|gTable|gTableSafe|gRemoveAll|clear|count|gGetGroup|gSetGroup|gGetShare|gResetGroup|gShare|table|ncount|depth|flip|typeids|clipToTypeid|clipFromTypeid|minIndex|maxIndex|typeidsArray|toArray|findToTable|typeidsTable|clone|concat|add|difference|intersect|merge|exists|invert|keys|values|pop|remove|unset|array|sum|average|bOr|bAnd|bXor|bShl|bShr|bNot|egpAlign|egpAlpha|egpAngle|egpColor|egpColor4|egpFidelity|egpFont|egpMaterial|egpMaterialFromScreen|egpOrder|egpParent|egpParentToCursor|egpUnParent|egpPos|egpQueue|egpQueueClk|egpQueueClkPly|egpQueuePlayer|egpQueueScreen|egpQueueScreenWirelink|egpRadius|egpRemove|egpResolution|egpScale|egpScrH|egpScrW|egpScrSize|egpSetText|egpSize|egpSizeNum|egpToWorld|egpTrackerParent|egpCanSendUmsg|egpClear|egpClearQueue|egpCopy|egpCursor|egpDrawTopLeft|egpGlobalPos|egpGlobalVertices|egpGlobalFiltering|egpHasObject|egpObjectContainsPoint|egpHudToggle|egpLoadFrame|egpSaveFrame|egpFiltering|egpMaxObjects|egpMaxUmsgPerSecond|egpNumObjects|egpRunOnQueue|egpVertices|egpObjectIndexes|egpObjectType|egpObjectTypes|egp3DTracker|egpBox|egpBoxOutline|egpCircle|egpCircleOutline|egpLine|egpLineStrip|egpPoly|egpPolyOutline|egpRoundedBox|egpRoundedBoxOutline|egpText|egpTextLayout|egpTriangle|egpTriangleOutline|egpWedge|egpWedgeOutline|glonDecode|glonDecodeTable|glonEncode|glonError|vonDecode|vonDecodeTable|vonEncode|vonError|jsonDecode|jsonDecodeTable|jsonEncode|jsonEncodeExternal|jsonDecodeTableExternal|jsonError|httpCanRequest|httpClk|httpData|httpSuccess|httpRequest|httpRequestUrl|httpUrlDecode|httpUrlEncode|runOnHTTP|soundDuration|soundPitch|soundPlay|soundPurge|soundStop|soundVolume|effect|play|setAngles|setAttachment|setDamageType|setEntIndex|setEntity|setFlags|setHitBox|setMagnitude|setMaterialIndex|setNormal|setOrigin|setRadius|setScale|setStart|setSurfaceProp|e|j|k|x|y|z|w)\\b"
+			}]
+		},
+		"types": {
+			"patterns": [{
+				"name": "entity.name.type.e2",
+				"match": "void|number|vector4|vector2|vector|angle|string|entity|array|table|ranger|bone|wirelink|gtable"
+			}]
+		},
+		"number": {
+			"patterns": [{
+				"name": "constant.numeric.e2",
+				"match": "\\b[0-9\\.]+\\b|true|false"
+			}]
+		},
+		"function": {
+			"patterns": [{
+				"name": "keyword.e2",
+				"match": "function ([a-z]+) ([A-Za-z0-9]+)",
+				"captures": {
+					"1": {
+						"name": "entity.name.type.e2"
+					},
+					"2": {
+						"name": "entity.name.function.e2"
+					}
+				}
+			}
+		]
+		},
+		"option": {
+			"patterns": [{
+				"name": "keyword.other.unit.e2",
+				"match": "@inputs|@outputs|@persist|@trigger|@model|@autoupdate"
+			},
+			{
+				"name": "keyword.other.unit.e2",
+				"match": "(@name) (.+)",
+				"captures": {
+					"1": {
+						"name": "keyword.other.unit.e2"
+					},
+					"2": {
+						"name": "string"
+					}
+				}
+			}
+		]
+		},
+		"comment": {
+			"patterns": [
+			{
+				"name": "comment.line.e2",
+				"match": "#.+"
+			}, 
+			{
+				"name": "comment.block.e2",
+				"begin": "#\\[", 
+				"end": "\\]#"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.skript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [{}]
+		}
+	},
+	"scopeName": "source.e2"
+}
